@@ -20,6 +20,7 @@ const tours = JSON.parse(fs.readFileSync(`${__dirname}/tours-simple.json`, 'utf-
 const importData = async () => {
   try {
     await Tour.create(tours);
+    console.log('Imported');
   } catch (err) {
     console.log(err);
   }
@@ -31,6 +32,7 @@ const importData = async () => {
 const deleteData = async () => {
   try {
     await Tour.deleteMany();
+    console.log('Deleted');
   } catch (err) {
     console.log(err);
   }

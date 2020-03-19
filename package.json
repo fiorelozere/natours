@@ -4,15 +4,18 @@
   "description": "Learning Node Express and MongoDb",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "debug": "ndb server.js"
   },
   "author": "fiorelo",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "mongoose": "^5.9.4",
-    "morgan": "^1.9.1"
+    "mongoose": "^5.9.5",
+    "morgan": "^1.9.1",
+    "slugify": "^1.4.0",
+    "validator": "^12.2.0"
   },
   "devDependencies": {
     "eslint": "^6.8.0",
