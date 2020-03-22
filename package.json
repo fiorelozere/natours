@@ -5,13 +5,16 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js"
   },
   "author": "fiorelo",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.5",
     "morgan": "^1.9.1",
     "slugify": "^1.4.0",
